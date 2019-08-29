@@ -15,6 +15,8 @@ Many are acquired from: https://userstyles.org
 
 * [Travis-CI Corrections](./travis-ci.css)
 
+* [Dark Wikimedia Sites](./wikimedia.css)
+
 
 ## Documentation
 
