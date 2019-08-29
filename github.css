@@ -1,0 +1,19 @@
+/* Enforce my preferred (desktop) tab width. */
+pre, .highlight, .diff-table, .tab-size { tab-size: 4 !important; }
+  
+/* Correct inappropriate background colors not covered by the other styles I include. */
+.markdown-body .highlight pre, .markdown-body pre { background-color: #202020; }
+
+/* Improve readability. */
+.pl-pds, .pl-s, .pl-s .pl-pse .pl-s1, .pl-sr, .pl-sr .pl-cce, .pl-sr .pl-sra, .pl-sr .pl-sre {
+    color: #87af87;
+}
+
+.pl-token.active, .pl-token:hover { background-color: #246; }
+
+/* This really likes being inverse to the desired dark theme. */
+.TimelineItem--break { border-top: none; background-color: transparent; }
+
+/* Experimental: redefine the fixed width fonts in use. */
+@font-face { font-family: "SFMono-Regular"; src: local('Hasklig'); }
+@font-face { font-family: "Menlo"; src: local('Hasklig'); }
