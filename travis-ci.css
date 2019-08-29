@@ -1,0 +1,53 @@
+@media only screen {
+
+.job-name:after,
+.job-lang:after,
+.job-env:after,
+.jobs-item:after
+{
+    display: none;
+}
+
+.jobs-list .ember-view,
+.build-header.canceled
+{
+    background: transparent !important;
+}
+
+.jobs-item.passed:hover .job-env:after, .jobs-item.passed:hover .job-lang:after, .jobs-item.passed:hover .job-name:after {
+    display: none;
+}
+
+.username span:after,
+.fade-out:after,
+.detail-job-env:after,
+.closeEnv:after,
+.build-commit:after {
+    display: none;
+}
+
+.my-build .message-and-branch .row-content:after, .my-build .repo .row-content:after,
+.tile h2:after,
+.profile-header h1:after,
+.owner-info:after,
+.jobs-item.passed:hover .job-name:after,
+.jobs-item.failed:hover .job-env:after, .jobs-item.failed:hover .job-lang:after, .jobs-item.failed:hover .job-name:after,
+.jobs-item.errored:hover .job-env:after, .jobs-item.errored:hover .job-lang:after, .jobs-item.errored:hover .job-name:after,
+.jobs-item.canceled:hover .job-env:after, .jobs-item.canceled:hover .job-lang:after, .jobs-item.canceled:hover .job-name:after,
+.jobs-item.created:hover .job-env:after, .jobs-item.created:hover .job-lang:after, .jobs-item.created:hover .job-name:after,
+.jobs-item.started:hover .job-env:after, .jobs-item.started:hover .job-lang:after, .jobs-item.started:hover .job-name:after,
+.jobs-item.booting:hover .job-env:after, .jobs-item.booting:hover .job-lang:after, .jobs-item.booting:hover .job-name:after,
+.jobs-item.queued:hover .job-env:after, .jobs-item.queued:hover .job-lang:after, .jobs-item.queued:hover .job-name:after,
+.jobs-item.received:hover .job-env:after, .jobs-item.received:hover .job-lang:after, .jobs-item.received:hover .job-name:after,
+.pr-row .row-branch:after,
+.pr-row .row-message:after,
+.request-item.approved:hover .fade-out:after,
+.request-item.rejected:hover .fade-out:after,
+.request-item.pending:hover .fade-out:after,
+.env-var-name:after, .ssh-key-name:after,
+.cron-job-text:after
+{
+    background: none !important;
+    display: none !important;
+    content: none;
+}
