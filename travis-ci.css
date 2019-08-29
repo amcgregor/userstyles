@@ -1,3 +1,12 @@
+/* ==UserStyle==
+@name			Travis-CI Corrections
+@author			Alice Bevan-McGregor <https://github.com/amcgregor/userstyles>
+@description	Correct a few elements not covered by the other endarkening styles.
+@version		1.0.0
+@namespace		github.com/amcgregor
+@license		MIT
+==/UserStyle== */
+
 @-moz-document domain("travis-ci.com"), domain("travis-ci.org") {
 	.job-name:after,
 	.job-lang:after,
