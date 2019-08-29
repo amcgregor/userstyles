@@ -1,7 +1,69 @@
-.wy-nav-content {
-    max-width: none;
+/* ==UserStyle==
+@name			Read the Docs Customizations and Corrections
+@author			Alice Bevan-McGregor <https://github.com/amcgregor/userstyles>
+@description	Correct a few elements not covered by the other endarkening styles.
+@version		1.0.0
+@namespace		github.com/amcgregor
+@license		MIT
+==/UserStyle== */
+
+@-moz-document domain("readthedocs.io"), domain("pytorch.org"), domain("keras.io") {
+	.wy-nav-content {
+		max-width: none;
+	}
+
+	.ethical-rtd {
+		display: none;
+	}
 }
 
-.ethical-rtd {
-    display: none;
+@-moz-document domain("keras.io") {
+	a {
+	    color: #2980B9;
+	}
+	
+	code {
+	    background-color: #1c1c1c;
+	    border-color: #1c1c1c;
+	    color: #F05732;
+	}
+	
+	.rst-content img {
+	    filter: invert(80%);
+	}
+	
+	/* Logo */
+	.keras-logo {
+	    background-color: #333;
+	}
+	
+	/** Syntax Highlighting **/
+	.hljs {
+	    color: #ccc;
+	}
+	
+	/* keywords */
+	.hljs-keyword, .css .rule .hljs-keyword, .hljs-winutils, .nginx .hljs-title, .hljs-subst, .hljs-request, .hljs-status {
+	    color: #007020;
+	}
+	
+	/* strings */
+	.hljs-string, .hljs-tag .hljs-value, .hljs-phpdoc, .hljs-dartdoc, .tex .hljs-formula {
+	    color: #4070a0;
+	}
+	
+	/* numeric literal */
+	.hljs-number, .hljs-hexcolor, .ruby .hljs-constant {
+	    color: #208050;
+	}
+	
+	/* Function names */
+	.hljs-title, .hljs-id, .scss .hljs-preprocessor {
+	    color: #2762f5;
+	}
+	
+	/* Comment */
+	.hljs-comment, .diff .hljs-header, .hljs-javadoc {
+	    color: #408090;
+	}
 }
