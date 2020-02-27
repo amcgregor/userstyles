@@ -1,0 +1,167 @@
+/* ==UserStyle==
+@name			Python Documentation
+@author			Alice Bevan-McGregor
+@version		1.0
+@namespace		marrow
+@license		MIT
+==/UserStyle== */
+
+@-moz-document domain("docs.python.org")
+{
+	body {
+		margin: 0;
+	}
+	
+	div.body {
+		max-width: none;  /* Remove ludicrous restriction. */
+	}
+	
+	div.related:first-child {
+		margin-top: 0;
+	}
+}
+
+@-moz-document domain("docs.python.org")
+{
+	/* Override the font used for fixed-width text content and adjust as needed. */
+	
+	@font-face {
+		font-family: 'Hasklug Nerd Font Mono';
+		font-weight: 200;
+		font-style: normal;
+		src: url("https://ghcdn.webcore.io/hasklug/hasklug--200-normal--nerd-font-complete--mono.otf");
+	}
+	
+	@font-face {
+		font-family: 'Hasklug Nerd Font Mono';
+		font-weight: 200;
+		font-style: italic;
+		src: url("https://ghcdn.webcore.io/hasklug/hasklug--200-italic--nerd-font-complete--mono.otf");
+	}
+	
+	@font-face {
+		font-family: 'Hasklug Nerd Font Mono';
+		font-weight: 300;
+		font-style: normal;
+		src: url("https://ghcdn.webcore.io/hasklug/hasklug--300-normal--nerd-font-complete--mono.otf");
+	}
+	
+	@font-face {
+		font-family: 'Hasklug Nerd Font Mono';
+		font-weight: 300;
+		font-style: italic;
+		src: url("https://ghcdn.webcore.io/hasklug/hasklug--300-italic--nerd-font-complete--mono.otf");
+	}
+	
+	@font-face {
+		font-family: 'Hasklug Nerd Font Mono';
+		font-weight: normal;
+		/* 400 */
+		font-style: normal;
+		src: url("https://ghcdn.webcore.io/hasklug/hasklug--400-normal--nerd-font-complete--mono.otf");
+	}
+	
+	@font-face {
+		font-family: 'Hasklug Nerd Font Mono';
+		font-weight: normal;
+		/* 400 */
+		font-style: italic;
+		src: url("https://ghcdn.webcore.io/hasklug/hasklug--400-italic--nerd-font-complete--mono.otf");
+	}
+	
+	@font-face {
+		font-family: 'Hasklug Nerd Font Mono';
+		font-weight: 500;
+		font-style: normal;
+		src: url("https://ghcdn.webcore.io/hasklug/hasklug--500-normal--nerd-font-complete--mono.otf");
+	}
+	
+	@font-face {
+		font-family: 'Hasklug Nerd Font Mono';
+		font-weight: 500;
+		font-style: italic;
+		src: url("https://ghcdn.webcore.io/hasklug/hasklug--500-italic--nerd-font-complete--mono.otf");
+	}
+	
+	@font-face {
+		font-family: 'Hasklug Nerd Font Mono';
+		font-weight: 600;
+		font-style: normal;
+		src: url("https://ghcdn.webcore.io/hasklug/hasklug--600-normal--nerd-font-complete--mono.otf");
+	}
+	
+	@font-face {
+		font-family: 'Hasklug Nerd Font Mono';
+		font-weight: 600;
+		font-style: italic;
+		src: url("https://ghcdn.webcore.io/hasklug/hasklug--600-italic--nerd-font-complete--mono.otf");
+	}
+	
+	@font-face {
+		font-family: 'Hasklug Nerd Font Mono';
+		font-weight: bold;
+		/* 700 */
+		font-style: normal;
+		src: url("https://ghcdn.webcore.io/hasklug/hasklug--700-normal--nerd-font-complete--mono.otf");
+	}
+	
+	@font-face {
+		font-family: 'Hasklug Nerd Font Mono';
+		font-weight: bold;
+		/* 700 */
+		font-style: italic;
+		src: url("https://ghcdn.webcore.io/hasklug/hasklug--700-italic--nerd-font-complete--mono.otf");
+	}
+	
+	@font-face {
+		font-family: 'Hasklug Nerd Font Mono';
+		font-weight: 900;
+		font-style: normal;
+		src: url("https://ghcdn.webcore.io/hasklug/hasklug--900-normal--nerd-font-complete--mono.otf");
+	}
+	
+	@font-face {
+		font-family: 'Hasklug Nerd Font Mono';
+		font-weight: 900;
+		font-style: italic;
+		src: url("https://ghcdn.webcore.io/hasklug/hasklug--900-italic--nerd-font-complete--mono.otf");
+	}
+	
+	tt, code, pre, dl.function dt {
+		font-family: 'Hasklug Nerd Font Mono';
+		font-variant-ligatures: common-ligatures;
+		font-weight: 300;
+	}
+	
+	pre {
+		line-height: 140%;
+	}
+	
+	code.descname {
+		font-weight: 600;
+	}
+}
+
+@-moz-document domain("docs.python.org")
+{
+	@media (prefers-color-scheme: dark) {
+		
+		body, div.document, div.body, div.related { background-color: #333; color: #ddd; }
+		div.body h1, div.body h2, div.body h3, div.body h4, div.body h5, div.body h6 { background-color: inherit; color: #e5e5e5; }
+		
+		div.admonition { color: #333; background-color: #ffe; }
+		
+		code { background-color: #444;  }
+		div.body pre { border: none; border-radius: 0; background-color: rgba(0,0,0,0.25); color: #ddd; }
+		.highlight .go { color: inherit; }
+		
+		table.docutils th { background-color: #555; }
+		table.docutils td { background-color: #444; }
+		
+		dt:target, span.highlighted {
+			background-color: #666;
+			padding: 0.5ex 1ex;
+		}
+		
+	}
+}
