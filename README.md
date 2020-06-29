@@ -35,15 +35,13 @@ Many are acquired from: https://userstyles.org
 
 ## GitHub
 
-* [GitHub Dark](https://stylishthemes.github.io/GitHub-Dark/github-dark.user.css)
+* [GitHub Fluid Dark Apprentice](./github-fluid-dark-apprentice.css)
 
 * [GitHub Selected Tab Color](https://raw.githubusercontent.com/StylishThemes/GitHub-Selected-Tab-Color/master/github-selected-tab-color.user.css)
 
 * [GitHub Fixed Header](https://github.com/StylishThemes/GitHub-FixedHeader/raw/master/github-fixed-header.user.css)
 
 * [GitHub Feed Icons](https://raw.githubusercontent.com/StylishThemes/GitHub-Feed-Icons/master/github-feed-icons.user.css)
-
-* [GitHub Tab Size, Omissions, and Corrections](./github.css)
 
 
 ## Stack Overflow
