@@ -1,0 +1,234 @@
+/* ==UserStyle==
+@name			GitHub Fluid Dark Apprentice
+@author			Alice Bevan-McGregor <alice@gothcandy.com>
+@description	Set tab size, override default font selection, apply fluid widths, and the Apprentice syntax coloring scheme.
+@version		1.0
+@namespace		marrow
+@license		MIT
+==/UserStyle== */
+
+@-moz-document domain("github.com"), domain("gist.github.com")
+{
+	/* Font Replacement
+	 * Replace the fonts defined by GitHub's official CSS with our own.
+	 * Rather than swapping the font-family absolutely everywhere.
+	 * Notably, you must have Hasklug installed locally, as CSP prevents external sourcing.
+	 * https://www.nerdfonts.com/font-downloads */
+	
+	@font-face {
+		font-family: 'SFMono-Regular';
+		font-weight: 400;
+		font-style: normal;
+		src: local("Hasklug");
+		/* src: url("https://ghcdn.webcore.io/hasklug/hasklug--300-normal--nerd-font-complete--mono.otf"); */
+	}
+	
+	@font-face {
+		font-family: 'SFMono-Regular';
+		font-weight: 400;
+		font-style: italic;
+		src: local("Hasklug");
+		/* src: url("https://ghcdn.webcore.io/hasklug/hasklug--300-italic--nerd-font-complete--mono.otf"); */
+	}
+	
+	@font-face {
+		font-family: 'SFMono-Regular';
+		font-weight: 700;
+		font-style: normal;
+		src: local("Hasklug");
+		/* src: url("https://ghcdn.webcore.io/hasklug/hasklug--500-normal--nerd-font-complete--mono.otf"); */
+	}
+	
+	@font-face {
+		font-family: 'SFMono-Regular';
+		font-weight: 700;
+		font-style: italic;
+		src: local("Hasklug");
+		/* src: url("https://ghcdn.webcore.io/hasklug/hasklug--500-italic--nerd-font-complete--mono.otf"); */
+	}
+	
+	
+	@font-face {
+		font-family: 'Consolas';
+		font-weight: 400;
+		font-style: normal;
+		src: local("Hasklug");
+		/* src: url("https://ghcdn.webcore.io/hasklug/hasklug--300-normal--nerd-font-complete--mono.otf"); */
+	}
+	
+	@font-face {
+		font-family: 'Consolas';
+		font-weight: 400;
+		font-style: italic;
+		src: local("Hasklug");
+		/* src: url("https://ghcdn.webcore.io/hasklug/hasklug--300-italic--nerd-font-complete--mono.otf"); */
+	}
+	
+	@font-face {
+		font-family: 'Consolas';
+		font-weight: 700;
+		font-style: normal;
+		src: local("Hasklug");
+		/* src: url("https://ghcdn.webcore.io/hasklug/hasklug--500-normal--nerd-font-complete--mono.otf"); */
+	}
+	
+	@font-face {
+		font-family: 'Consolas';
+		font-weight: 700;
+		font-style: italic;
+		src: local("Hasklug");
+		/* src: url("https://ghcdn.webcore.io/hasklug/hasklug--500-italic--nerd-font-complete--mono.otf"); */
+	}
+	
+	
+	@font-face {
+		font-family: 'Menlo';
+		font-weight: 400;
+		font-style: normal;
+		src: local("Hasklug");
+		/* src: url("https://ghcdn.webcore.io/hasklug/hasklug--300-normal--nerd-font-complete--mono.otf"); */
+	}
+	
+	@font-face {
+		font-family: 'Menlo';
+		font-weight: 400;
+		font-style: italic;
+		src: local("Hasklug");
+		/* src: url("https://ghcdn.webcore.io/hasklug/hasklug--300-italic--nerd-font-complete--mono.otf"); */
+	}
+	
+	@font-face {
+		font-family: 'Menlo';
+		font-weight: 700;
+		font-style: normal;
+		src: local("Hasklug");
+		/* src: url("https://ghcdn.webcore.io/hasklug/hasklug--500-normal--nerd-font-complete--mono.otf"); */
+	}
+	
+	@font-face {
+		font-family: 'Menlo';
+		font-weight: 700;
+		font-style: italic;
+		src: local("Hasklug");
+		/* src: url("https://ghcdn.webcore.io/hasklug/hasklug--500-italic--nerd-font-complete--mono.otf"); */
+	}
+}
+
+@-moz-document domain("gist.github.com"), domain("github.com")
+{
+	/* 4-Character-Wide Tabulators */
+	
+	pre, code, samp, .text-mono, .highlight, .diff-table, .tab-size {
+		tab-size: 4 !important;
+		-moz-tab-size: 4 !important;
+	}
+}
+
+@-moz-document domain("github.com"), domain("gist.github.com")
+{
+	/* General dark colour scheme.
+	 * Will only actually be utilized if your system is set to dark mode. */
+	
+	@media (prefers-color-scheme: dark) {
+		
+		body { background-color: #222; color: #bbb; }
+		a { color: #5f87af; }
+		a:hover { color: #39F; text-decoration: none; }
+		
+		.gh-header { background-color: transparent; }
+		.markdown-body .highlight pre, .markdown-body pre { background-color: #0003; }
+		
+		.bg-white { background-color: #fff1 !important; }
+		.bg-gray-light { background-color: #111 !important; }
+		.Box { background-color: #333; border-color: #9999; }
+		.Box-row { border-top-color: #fff1; }
+		.Box-header { background-color: #111; border-color: #9999; }
+		.Box-body { border-bottom-width: 0; }
+		.btn { background-color: #ccc; }
+		
+		.highlight { margin-top: 1ex; margin-bottom: 1ex; }
+		
+		.navigation-focus { background-color: #000; }
+		
+		.text-gray { color: #99a !important; }
+		.text-gray-dark { color: #eee !important; }
+		.link-gray { color: rgb(150, 175, 190) !important; }
+		.link-gray:hover { color: rgb(175, 200, 230) !important; }
+		.link-gray-dark { color: #fffa !important; }
+		.link-gray-dark:hover { color: #fff !important; }
+		.link-gray-dark strong { color: #FF8700; }
+		.muted-link { color: #ff8700 !important; }
+		.topic-tag { background-color: #444; color: #ddd; }
+		.Box-row--focus-gray.navigation-focus { background-color: #222;  }
+		a[rel="author"] { color: #ff8700 !important; }
+		.Label--outline { border-color: #333; color: #8787af; }
+		
+		.breadcrumb strong.final-path { color: white; }
+		.reponav-item.selected { background-color: #222; color: #fff }
+		.file-header { background-color: #444; }
+		
+		.file, .file-header { border-color: #fff3 }
+		
+		.UnderlineNav-item { color: #ccc; transition-property: color, border-bottom-color; }
+		.UnderlineNav-item.selected { color: #fff; }
+		.UnderlineNav-item:hover { color: #fff; }
+		
+		.blob-num { color: #fff5; }
+		.blob-num:hover { color: #fff; }
+		.blob-num-addition, .blob-num-deletion { color: #000 !important; }
+		.blob-num-addition:hover, .blob-num-deletion:hover { color: #fff !important; }
+		.blob-num-addition { background-color: #87af87; }
+		.blob-num-deletion { background-color: #af5f5f; }
+		.blob-num-expandable { background-color: #111; }
+		.js-expandable-lin td, .blob-code-hunk { background-color: #000; }
+		.blob-code-deletion { background-color: #af5f5f44; }
+		.blob-code-deletion .x { background-color: #8787af; }
+		.blob-code-addition { background-color: #87af8744; }
+		.blob-code-addition .x { background-color: #8787af; }
+		.gist-blob-name { color: #aaf; }
+		.blob-expanded td { background-color: inherit !important; }
+		
+		.timeline-comment { background-color: #333; color: #ccc; }
+		.timeline-comment.current-user.timeline-chosen-answer .timeline-comment-header, .timeline-comment.timeline-chosen-answer .timeline-comment-header,
+		.timeline-comment.current-user .timeline-comment-header { background-color: #666; color: #eee; }
+	
+		.timeline-comment-wrapper, .discussion-timeline-actions { background-color: transparent; border: none; }
+		.js-chromeless-input-container { padding: 3px; }
+		.js-chromeless-input-container input { border-width: 0; }
+		
+		.team-mention, .user-mention, .commit-message .issue-link, a[data-hovercard-type="user"], .timeline-comment-header .author { color: #FF8700 !important; }
+		
+	}
+}
+
+@-moz-document domain("github.com"), domain("gist.github.com")
+{
+	/* Apprentice Syntax Colouring
+	 * As per the overall dark theme, this will only apply if your system is set to dark mode. */
+	
+	@media (prefers-color-scheme: dark) {
+	
+		.blob-code-inner { font-size: 15px; color: #bcbcbc }
+		.blob-num { font-size: 12px; color: #6c6c6c }
+		
+		.pl-e { color: #87af87 }
+		.pl-c { color: #585858 }
+		.pl-s { color: #87af87 }
+		.pl-k { color: #ff8700 }
+		.pl-s1 { color: #5f87af }
+		.pl-pds { #ff8700; }
+		.pl-v { color: #8787af }
+		.pl-en { color: #ffffaf }
+		.pl-c1 { color: #ff8700 }
+		.pl-c1 > .pl-c1 { color: #5f8787 }
+		.pl-ent { color: #5f875f }
+		
+	}
+}
+
+@-moz-document domain("github.com"), domain("gist.github.com")
+{
+	/* Fluid Width Adaptions */
+	
+	.container-lg { margin-left: 0; margin-right: 0; max-width: none; }
+}
