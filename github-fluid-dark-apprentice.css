@@ -135,16 +135,47 @@
 		a { color: #5f87af; }
 		a:hover { color: #39F; text-decoration: none; }
 		
+		.border,
+		.timeline-comment.current-user .timeline-comment-header,
+		.timeline-comment { border-color: #FFF3 !important; }
+		.timeline-comment-header { border-color: transparent !important; }
+		.timeline-comment.current-user { border-color: #FFF6 !important; }
+		.timeline-comment.current-user .timeline-comment-header, .comment-reactions.has-reactions, .reaction-summary-item { border-color: #FFF3 !important; }
+		.review-comment { color: #eee; }
+		.border-top { border-top-color: #FFF3 !important; }
+		
+		
+		.timeline-new-comment .comment-form-head { margin-bottom: 0 !important; }
+		.js-write-bucket { margin: 0 !important; }
+		.form-control.js-size-to-fit, .form-select.js-size-to-fit { border: none; border-radius: 0; }
+		.rounded-1 { border-radius: 0 !important; }
+		.drag-and-drop { border: 0; }
+		
+
+		.gh-header .gh-header-sticky.is-stuck+.gh-header-shadow { background-color: #000; }
+		.orghead { background-color: #111; }
+		.project-header { background-color: #333; }
+		.project-column { background-color: #222; }
+		
+		.repohead h1.private .octicon { color: #FFFFAF; }
+		.header-search-current .jump-to-suggestions-path { color: #ccc; }
+		.thread-subscription-status { background-color: transparent; /* Why is there even a background on this one special case? */ }
+		
 		.gh-header { background-color: transparent; }
 		.markdown-body .highlight pre, .markdown-body pre { background-color: #0003; }
+		.markdown-body code, .markdown-body tt { background-color: #0003; border: 0.5px solid #0006; }
 		
 		.bg-white { background-color: #fff1 !important; }
+		.bg-gray { background-color: #333 !important; }
 		.bg-gray-light { background-color: #111 !important; }
-		.Box { background-color: #333; border-color: #9999; }
+		.bg-gray-light.ml-1 { background-color: transparent !important; }
+		.Box { background-color: #333; border-color: #9993; }
 		.Box-row { border-top-color: #fff1; }
 		.Box-header { background-color: #111; border-color: #9999; }
 		.Box-body { border-bottom-width: 0; }
 		.btn { background-color: #ccc; }
+		.btn-primary { background-color: #ffffaf !important; color: black; }
+		.btn-primary.disabled, .btn-primary:disabled, .btn-primary[aria-disabled=true] { background-color: #262626 !important; color: #8fafd7; }
 		
 		.highlight { margin-top: 1ex; margin-bottom: 1ex; }
 		
@@ -162,10 +193,12 @@
 		.Box-row--focus-gray.navigation-focus { background-color: #222;  }
 		a[rel="author"] { color: #ff8700 !important; }
 		.Label--outline { border-color: #333; color: #8787af; }
+		.Counter--gray-light { color: #fff; }
 		
 		.breadcrumb strong.final-path { color: white; }
 		.reponav-item.selected { background-color: #222; color: #fff }
 		.file-header { background-color: #444; }
+		.filter-bar { background-color: #444; border-bottom-color: rgba(153, 153, 153, 0.6); }
 		
 		.file, .file-header { border-color: #fff3 }
 		
@@ -189,14 +222,25 @@
 		.blob-expanded td { background-color: inherit !important; }
 		
 		.timeline-comment { background-color: #333; color: #ccc; }
+		.timeline-comment-header { background-color: #666; color: #eee; }
 		.timeline-comment.current-user.timeline-chosen-answer .timeline-comment-header, .timeline-comment.timeline-chosen-answer .timeline-comment-header,
-		.timeline-comment.current-user .timeline-comment-header { background-color: #666; color: #eee; }
-	
+		.timeline-comment.current-user .timeline-comment-header { background-color: #444; color: #bbb; }
 		.timeline-comment-wrapper, .discussion-timeline-actions { background-color: transparent; border: none; }
+		.TimelineItem-break { background-color: transparent; border-top-color: #6C6C6C; }
+		
 		.js-chromeless-input-container { padding: 3px; }
 		.js-chromeless-input-container input { border-width: 0; }
 		
 		.team-mention, .user-mention, .commit-message .issue-link, a[data-hovercard-type="user"], .timeline-comment-header .author { color: #FF8700 !important; }
+		
+		.wiki-footer ::first-line { font-weight: bold; color: #999; }
+		.wiki-footer .Box { border-width: 1px 0 0 0; border-radius: 0; background-color: transparent !important; color: #666; }
+		.wiki-footer .Box--condensed .Box-body { padding: 8px 8px 0 0; }
+		
+		.form-control, .form-select { background-color: #000; color: #ccc; }
+		
+		#gollum-editor-function-bar.border-bottom { border-bottom: none !important; }
+		.page-responsive .previewable-comment-form .comment-form-head.tabnav { background-color: none; }
 		
 	}
 }
