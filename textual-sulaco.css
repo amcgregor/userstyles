@@ -12,6 +12,8 @@ TODO: adjust inline media control display.
 
 */
 
+* { text-shadow: none !important; }
+
 #topicBar {
 	box-shadow: none;
 	padding-bottom: 1ex;
